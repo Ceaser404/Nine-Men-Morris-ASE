@@ -23,7 +23,6 @@
   background-color: #282c34;
   padding: 20px;
   color: white;
-  font-size: 24px;
 }
 
 main {
@@ -34,6 +33,11 @@ main {
 
 .App-link {
   color: #61dafb;
+}
+
+.status-bar {
+  right: 500px;
+  display: absolute;
 }
 
 @keyframes App-logo-spin {

@@ -1,20 +1,31 @@
-// src/App.js
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';  // Optional: General app-wide styles
-import Board from './components/Board';  // Import the Board component
+import Game from './components/Game';
+import StartScreen from './components/StartScreen';
 
 function App() {
+  const [gameSettings, setGameSettings] = useState(null);
+
+  const handleStartGame = (settings) => {
+    setGameSettings(settings);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Play Nine Men's Morris</h1>
-      </header>
-      <main>
-        <Board />  {/* Render the Board component here */}
-      </main>
+    <div>
+      <div className="App">
+        <header className="App-header">
+          <h1>Play Nine or Twelve Men's Morris</h1>
+        </header>
+        <main>
+          {!gameSettings ? (
+            <StartScreen onStartGame={handleStartGame} />
+          ) : (
+            <Game settings={gameSettings} />
+          )}
+        </main>
+      </div>
     </div>
   );
 }
 
 export default App;
-

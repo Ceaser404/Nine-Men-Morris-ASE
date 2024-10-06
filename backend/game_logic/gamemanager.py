@@ -15,7 +15,7 @@ class GameManager:
         """Handle placing a piece on the board."""
         if self.phase != 'placing':
             return False
-        
+
         if self.board.is_valid_position(x, y) and self.board.grid[x][y] is None:
             if self.current_player.place_piece((x, y)):  # Place the piece
                 self.board.grid[x][y] = self.current_player.player_id
