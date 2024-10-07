@@ -52,7 +52,7 @@ export default function Board(props) {
         </div>
         <div>
             <Space lineType="vertical"/>
-            <Space lineType={isTwelveMorris ? 'diagonal-45' : 'vertical'} />
+            <Space lineType={isTwelveMorris ? 'diagonal-45' : ''} />
             <Space/>
             <Space/>
             <Space/>
@@ -62,7 +62,7 @@ export default function Board(props) {
             <Space/>
             <Space/>
             <Space/>
-            <Space lineType="diagonal45"/>
+            <Space lineType={isTwelveMorris ? 'diagonal45' : ''} />
             <Space lineType="vertical"/>
         </div>
         <div>
@@ -99,13 +99,13 @@ export default function Board(props) {
             <Space lineType="vertical"/>
             <Space/>
             <Space lineType="vertical"/>
-            <Space/>
+            <Space lineType={isTwelveMorris ? 'diagonal-45' : ''} />
             <Space/>
             <Space/>
             <Space lineType="vertical"/>
             <Space/>
             <Space/>
-            <Space/>
+            <Space lineType={isTwelveMorris ? 'diagonal45' : ''} />
             <Space lineType="vertical"/>
             <Space/>
             <Space lineType="vertical"/>
@@ -249,13 +249,13 @@ export default function Board(props) {
             <Space lineType="vertical"/>
             <Space/>
             <Space lineType="vertical"/>
-            <Space/>
+            <Space lineType={isTwelveMorris ? 'diagonal45' : ''} />
             <Space/>
             <Space/>
             <Space lineType="vertical"/>
             <Space/>
             <Space/>
-            <Space/>
+            <Space lineType={isTwelveMorris ? 'diagonal-45' : ''} />
             <Space lineType="vertical"/>
             <Space/>
             <Space lineType="vertical"/>
@@ -292,7 +292,7 @@ export default function Board(props) {
         </div>
         <div>
             <Space lineType="vertical"/>
-            <Space/>
+            <Space lineType={isTwelveMorris ? 'diagonal45' : ''} />
             <Space/>
             <Space/>
             <Space/>
@@ -302,7 +302,7 @@ export default function Board(props) {
             <Space/>
             <Space/>
             <Space/>
-            <Space/>
+            <Space lineType={isTwelveMorris ? 'diagonal-45' : ''} />
             <Space lineType="vertical"/>
         </div>
         <div>
